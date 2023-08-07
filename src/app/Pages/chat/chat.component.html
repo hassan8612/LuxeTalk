@@ -294,7 +294,7 @@
 
                     <div class="flex-grow-0 py-3 px-4 border-top">
                         <div class="input-group">
-                            <input type="text" class="form-control" [(ngModel)]="chatMsg" placeholder="Type your message">
+                            <input type="text" class="form-control" (keyup.enter)="sendMsg()" [(ngModel)]="chatMsg" placeholder="Type your message">
                             <button class="btn btn-primary" (click)="sendMsg()">Send</button>
                         </div>
                     </div>
